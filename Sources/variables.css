@@ -1,0 +1,52 @@
+
+:root {
+
+
+/* [ COLOURS ]:                 */
+
+--white:      #fff;
+--light:      #FFFEF8;
+--orange:     #F9B148;
+--green:      #2F6B75;
+--d-green:    #26565E;
+--dark:       #2E3133;
+
+--error:      #FF858D;
+--success:    #65EB9B;
+
+
+/* [ FONTS ]:                 */
+
+ /*  fonts  */
+--f-size: 10px;
+--f-family: 'Playfair Display', serif;
+--font: var(--f-size) var(--f-family);
+
+ /*  weights  */
+--f-normal: 400;
+--f-bold: 700;
+
+ /*  styles: Desktop  */
+--f-button:               bold 1.9rem;
+--f-plain-heading:        bold 2.4rem;
+--f-plain-text:           normal 2.4rem;
+--f-heading-xl:           bold 7rem;
+--f-heading-1:            bold 3.6rem;
+--f-heading-3:            bold 2.2rem;
+--f-heading-3-regular:    normal 2.2rem;
+--f-heading-6:            normal 1.6rem;
+
+ /*  styles: Mobile  */
+--f-m-button:             bold 1.2rem;
+--f-m-plain-heading:      bold 1.2rem;
+--f-m-plain-text:         normal 1rem;
+--f-m-heading-xl:         bold 2.4rem;
+--f-m-heading-1:          bold 1.4rem;
+--f-m-heading-3:          bold 1.2rem;
+--f-m-heading-3-regular:  normal 1.2rem;
+--f-m-heading-6:          bold 1rem;
+--f-m-heading-6-regular:  normal 1rem;
+
+ 
+
+}
