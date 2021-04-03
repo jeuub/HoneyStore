@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Алтайский мёд</title>
+  <title>Дом | Алтайский мёд </title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
@@ -25,18 +25,18 @@
     </div>
 
     <nav>
-      <a class="nav-brand" href="#"><img src="Sources/logo.svg" alt="logo"></a>
+      <a class="nav-brand" href="index.html"><img src="Sources/logo.svg" alt="logo"></a>
 
       <div class="menu-burger" tabindex="0">
         <div class="bar"></div>
       </div>
 
       <ul class="nav-links">
-        <li><a href="#">каталог</a></li>
+        <li><a href="store.html">Мёд</a></li>
         <span>|</span>
-        <li><a href="#">о нас</a></li>
+        <li><a href="#footer">Контакты</a></li>
         <span>|</span>
-        <li><a href="#">контакты</a></li>
+        <li><a href="#footer">Услуги</a></li>
       </ul>
       <div class="nav-searchCart">
         <button class="nav-search">
@@ -47,7 +47,7 @@
             
         </button>
 
-        <a href="#" class="nav-cart">
+        <a href="cart.html" class="nav-cart">
           <svg width="42" height="30" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="nav__icon__svg" d="M4.47025 0H0.186746C0.0836089 0 0 0.0818518 0 0.182821V0.956961C0 1.05793 0.0836089 1.13978 0.186746 1.13978H4.47025C4.57339 1.13978 4.657 1.05793 4.657 0.956961V0.182821C4.657 0.0818518 4.57339 0 4.47025 0Z" fill="#FFFEF8"/>
             <path class="nav__icon__svg" d="M10.6202 13.5255L9.83413 14.8577C9.80852 14.9012 9.77158 14.9373 9.72707 14.9623C9.68257 14.9872 9.63209 15.0002 9.58079 14.9999H8.00999C7.95892 15 7.90873 14.9869 7.86449 14.9619C7.82025 14.9369 7.78354 14.901 7.75805 14.8577L6.97288 13.5255C6.94746 13.4822 6.93408 13.4332 6.93408 13.3832C6.93408 13.3333 6.94746 13.2843 6.97288 13.241L7.75897 11.9084C7.78446 11.865 7.82119 11.8291 7.86542 11.8041C7.90966 11.7791 7.95985 11.766 8.01092 11.7661H9.58079C9.63186 11.766 9.68205 11.7791 9.72629 11.8041C9.77053 11.8291 9.80724 11.865 9.83273 11.9084L10.6188 13.241C10.6445 13.2841 10.6581 13.3331 10.6583 13.3831C10.6586 13.433 10.6454 13.4821 10.6202 13.5255Z" fill="#FFFEF8"/>
@@ -62,9 +62,8 @@
 
       <div class="overlay overlay1">
         <ul class="menu-options-list">
-          <li class="menu-option option-1"><a href="#">Каталог<span>.</span></a></li>
-          <li class="menu-option option-2"><a href="#">О нас<span>.</span></a></li>
-          <li class="menu-option option-3"><a href="#">Контакты<span>.</span></a></li>
+          <li class="menu-option option-1"><a class="menu-option__link" href="store.html">Мёд<span>.</span></a></li>
+          <li class="menu-option option-3"><a class="menu-option__link" href="#footer">Контакты<span>.</span></a></li>
         </ul>
         </li>
       </div>
@@ -75,9 +74,9 @@
             <button class="icon__presearch" type="submit" for="search"></button>
             <input id="search" class="overlay__input-search" type="search" placeholder="Поиск...">
           </li>
-          <li class="menu-option option-1"><a href="#">пункт1<span>.</span></a></li>
-          <li class="menu-option option-2"><a href="#">пункт2<span>.</span></a></li>
-          <li class="menu-option option-3"><a href="#">пункт3<span>.</span></a></li>
+          <li class="menu-option option-1"><a href="#">Пункт1<span>.</span></a></li>
+          <li class="menu-option option-2"><a href="#">Пункт2<span>.</span></a></li>
+          <li class="menu-option option-3"><a href="#">Пункт3<span>.</span></a></li>
         </ul>
         </li>
       </div>
@@ -140,13 +139,13 @@
         </svg>
     </section>
   </main>
-  <footer>
+  <footer id="footer">
     <div class="footer__inner">
       <div class="footer__market">
         <h4>Магазин</h4>
         <ul>
-          <li><a href="#">Каталог товаров</a></li>
-          <li><a href="#">Категории меда</a></li>
+          <li><a href="store.html">Каталог товаров</a></li>
+          <li><a href="cart.html">Корзина</a></li>
         </ul>
       </div>
       <div class="footer__info">
