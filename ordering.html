@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="Sources/variables.css">
-  <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="css/ordering.css">
 </head>
 <body>
   <header>
@@ -106,244 +106,61 @@
           <span>640 р.</span>
         </div>
       </div>
-      <a class="orderconfirm" href="ordering.html">перейти к оформлению</a>
+      <a class="orderconfirm" href="cart.html">отменить заказ</a>
     </div>  
     </section>
-    <section>
+    <section class="main__content">
       <span class="breadcrumbs">
         <a href="store.html">Магазин</a> /
-        Корзина
+        <a href="cart.html">Корзина</a>/
+        Оформление
       </span>
+      <h2>
+        Оформление заказа
+      </h2>
+      <div class="main__content__forms">
+        <form action="">
+          <span class="main__content__forms__info"><span class="main__content__forms__info__star">*</span> - обязательные к заполнению поля</span>
+          <div class="main__content__forms__forms">
+          <div class="main__content__forms__personal main__content__form">
+            <h3>Персональные данные</h3>
+            <label for="name">Имя *</label>
+            <input type="text" id="name" placeholder="Имя ...">
+            
+            <label for="surname">Фамилия *</label>
+            <input type="text" id="surname" placeholder="Фамилия ...">
+
+            <label for="email">Email *</label>
+            <input type="text" id="email" placeholder="Электронная почта ...">
+
+            <label for="tel">Телефон *</label>
+            <input type="text" id="tel" placeholder="Номер телефона ...">
+          </div>
+          <div class="main__content__forms__delivery main__content__form">
+            <h3>Данные для доставки</h3>
+            <label for="country">Страна *</label>
+            <input type="text" id="country" placeholder="Страна ...">
+
+            <label for="city">Город *</label>
+            <input type="text" id="city" placeholder="Город ...">
+
+            <label for="address">Адрес *</label>
+            <input type="text" id="address" placeholder="Адрес ...">
+          </div>
+          </div>      
+          <div class="main__content__form__buttons">
+            <button type="reset" class="main__content__form__buttons-cancel">Отменить заказа</button>
+            <button type="submit" class="main__content__form__buttons-confirm">Оформить заказ</button>
+          </div>
+        </form>
+      </div>
     </section>
-    <section class="market">
-      <ul class="market__cards">
-        <li class="card">
-          <a href="card.html" target="_blank" class="card__link">
-            <img src="Sources/ex.png" alt="honey">
-            <h4>Крем-мед алтайский супер-вкусный</h4></a> 
-          <div class="card__weight">
-            <input type="radio" name="card2-weight" checked id="card2-weight__option1"> 
-            <label for="card2-weight__option1">120 гр.</label>
-            
-            <input type="radio" name="card2-weight" id="card2-weight__option2">
-            <label for="card2-weight__option2">0.5 кг</label>
-            
-            <svg width="15" height="13.5" viewBox="0 0 10 7" class="weight__extender deactive" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 1L5 5L9 1" stroke="#2F6B75" stroke-width="1.5"/>
-              </svg>
-              
-              
-            <div class="card__weight--extended">
-              <input type="radio" name="card2-weight" id="card2-weight__option3">
-              <label for="card2-weight__option3">1 кг</label>
+   
 
-              <input type="radio" name="card2-weight" id="card2-weight__option4">
-              <label for="card2-weight__option4">5 кг</label>  
-            </div>  
-          </div>
-          <div class="card__qnt"> 
-            <button class="card__decrease"></button><input min="1" type="number" class="card__qnnt__input" value="1"><button class="increase"></button>
-          </div>
-          <div class="card__bottom">
-            <div class="card__bottom__inner">
-              <span class="card__price">320 ₽</span><span class="card__old__price">400 ₽</span>
-            </div>
-            <button class='card__addtocart'>
-              <span class="card__addtocart__text">удалить</span>
-            </button>
-          </div>
-      </li>
 
-      <li class="card">
-        <a href="card.html" target="_blank" class="card__link">
-          <img src="Sources/ex.png" alt="honey">
-          <h4>Крем-мед алтайский супер-вкусный</h4></a> 
-        <div class="card__weight">
-          <input type="radio" name="card3-weight" checked id="card3-weight__option1"> 
-          <label for="card3-weight__option1">120 гр.</label>
-          
-          <input type="radio" name="card3-weight" id="card3-weight__option2">
-          <label for="card3-weight__option2">0.5 кг</label>
-          
-          <svg width="15" height="13.5" viewBox="0 0 10 7" class="weight__extender deactive" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 1L5 5L9 1" stroke="#2F6B75" stroke-width="1.5"/>
-            </svg>
-            
-            
-          <div class="card__weight--extended">
-            <input type="radio" name="card3-weight" id="card3-weight__option3">
-            <label for="card3-weight__option3">1 кг</label>
-
-            <input type="radio" name="card3-weight" id="card3-weight__option4">
-            <label for="card3-weight__option4">5 кг</label>  
-          </div>  
-        </div>
-        <div class="card__qnt"> 
-          <button class="card__decrease"></button><input min="1" type="number" class="card__qnnt__input" value="1"><button class="increase"></button>
-        </div>
-        <div class="card__bottom">
-          <div class="card__bottom__inner">
-            <span class="card__price">320 ₽</span><span class="card__old__price">400 ₽</span>
-          </div>
-          <button class='card__addtocart'>
-           <span class="card__addtocart__text">удалить</span>
-          </button>
-        </div>
-    </li>
-
-    
-    <li class="card">
-      <a href="card.html" target="_blank" class="card__link">
-        <img src="Sources/ex.png" alt="honey">
-        <h4>Крем-мед алтайский супер-вкусный</h4></a> 
-      <div class="card__weight">
-        <input type="radio" name="card4-weight" checked id="card4-weight__option1"> 
-        <label for="card4-weight__option1">120 гр.</label>
-        
-        <input type="radio" name="card4-weight" id="card4-weight__option2">
-        <label for="card4-weight__option2">0.5 кг</label>
-        
-        <svg width="15" height="13.5" viewBox="0 0 10 7" class="weight__extender deactive" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 1L5 5L9 1" stroke="#2F6B75" stroke-width="1.5"/>
-          </svg>
-          
-          
-        <div class="card__weight--extended">
-          <input type="radio" name="card4-weight" id="card4-weight__option3">
-          <label for="card4-weight__option3">1 кг</label>
-
-          <input type="radio" name="card4-weight" id="card4-weight__option4">
-          <label for="card4-weight__option4">5 кг</label>  
-        </div>  
-      </div>
-      <div class="card__qnt"> 
-        <button class="card__decrease"></button><input min="1" type="number" class="card__qnnt__input" value="1"><button class="increase"></button>
-      </div>
-      <div class="card__bottom">
-        <div class="card__bottom__inner">
-          <span class="card__price">320 ₽</span><span class="card__old__price">400 ₽</span>
-        </div>
-        <button class='card__addtocart'>
-          <span class="card__addtocart__text">удалить</span>
-        </button>
-      </div>
-  </li>
-
-  <li class="card">
-    <a href="card.html" target="_blank" class="card__link">
-      <img src="Sources/ex.png" alt="honey">
-      <h4>Крем-мед алтайский супер-вкусный</h4></a> 
-    <div class="card__weight">
-      <input type="radio" name="card5-weight" checked id="card5-weight__option1"> 
-      <label for="card5-weight__option1">120 гр.</label>
-      
-      <input type="radio" name="card5-weight" id="card5-weight__option2">
-      <label for="card5-weight__option2">0.5 кг</label>
-      
-      <svg width="15" height="13.5" viewBox="0 0 10 7" class="weight__extender deactive" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 1L5 5L9 1" stroke="#2F6B75" stroke-width="1.5"/>
-        </svg>
-        
-        
-      <div class="card__weight--extended">
-        <input type="radio" name="card5-weight" id="card5-weight__option3">
-        <label for="card5-weight__option3">1 кг</label>
-
-        <input type="radio" name="card5-weight" id="card5-weight__option4">
-        <label for="card5-weight__option4">5 кг</label>  
-      </div>  
-    </div>
-    <div class="card__qnt"> 
-      <button class="card__decrease"></button><input min="1" type="number" class="card__qnnt__input" value="1"><button class="increase"></button>
-    </div>
-    <div class="card__bottom">
-      <div class="card__bottom__inner">
-        <span class="card__price">320 ₽</span><span class="card__old__price">400 ₽</span>
-      </div>
-      <button class='card__addtocart'>
-        <span class="card__addtocart__text">удалить</span>
-      </button>
-    </div>
-</li>
-
-<li class="card">
-  <a href="card.html" target="_blank" class="card__link">
-    <img src="Sources/ex.png" alt="honey">
-    <h4>Крем-мед алтайский супер-вкусный</h4></a>  
-  <div class="card__weight">
-    <input type="radio" name="card6-weight" checked id="card6-weight__option1"> 
-    <label for="card6-weight__option1">120 гр.</label>
-    
-    <input type="radio" name="card6-weight" id="card6-weight__option2">
-    <label for="card6-weight__option2">0.5 кг</label>
-    
-    <svg width="15" height="13.5" viewBox="0 0 10 7" class="weight__extender deactive" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M1 1L5 5L9 1" stroke="#2F6B75" stroke-width="1.5"/>
-      </svg>
-      
-      
-    <div class="card__weight--extended">
-      <input type="radio" name="card6-weight" id="card6-weight__option3">
-      <label for="card6-weight__option3">1 кг</label>
-
-      <input type="radio" name="card6-weight" id="card6-weight__option4">
-      <label for="card6-weight__option4">5 кг</label>  
-    </div>  
-  </div>
-  <div class="card__qnt"> 
-    <button class="card__decrease"></button><input min="1" type="number" class="card__qnnt__input" value="1"><button class="increase"></button>
-  </div>
-  <div class="card__bottom">
-    <div class="card__bottom__inner">
-      <span class="card__price">320 ₽</span><span class="card__old__price">400 ₽</span>
-    </div>
-    <button class='card__addtocart'>
-      <span class="card__addtocart__text">удалить</span>
-    </button>
-  </div>
-</li>
-
-<li class="card">
-  <a href="card.html" target="_blank" class="card__link">
-    <img src="Sources/ex.png" alt="honey">
-    <h4>Крем-мед алтайский супер-вкусный</h4></a>  
-  <div class="card__weight">
-    <input type="radio" name="card7-weight" checked id="card7-weight__option1"> 
-    <label for="card7-weight__option1">120 гр.</label>
-    
-    <input type="radio" name="card7-weight" id="card7-weight__option2">
-    <label for="card7-weight__option2">0.5 кг</label>
-    
-    <svg width="15" height="13.5" viewBox="0 0 10 7" class="weight__extender deactive" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M1 1L5 5L9 1" stroke="#2F6B75" stroke-width="1.5"/>
-      </svg>
-      
-      
-    <div class="card__weight--extended">
-      <input type="radio" name="card7-weight" id="card7-weight__option3">
-      <label for="card7-weight__option3">1 кг</label>
-
-      <input type="radio" name="card7-weight" id="card7-weight__option4">
-      <label for="card7-weight__option4">5 кг</label>  
-    </div>  
-  </div>
-  <div class="card__qnt"> 
-    <button class="card__decrease"></button><input min="1" type="number" class="card__qnnt__input" value="1"><button class="increase"></button>
-  </div>
-  <div class="card__bottom">
-    <div class="card__bottom__inner">
-      <span class="card__price">320 ₽</span><span class="card__old__price">400 ₽</span>
-    </div>
-    <button class='card__addtocart'>
-      <span class="card__addtocart__text">удалить</span>
-    </button>
-  </div>
-</li>
-      </ul>
-    </section>
   </main>
   
- .. 
+  
   
   <footer id="footer">
     <div class="footer__inner">
@@ -373,6 +190,6 @@
   </footer>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-  <script src="js/cart.js"></script>
+  <script src="js/ordering.js"></script>
 </body>
 </html>
